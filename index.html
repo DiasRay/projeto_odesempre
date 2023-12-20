@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="src/midia/cafeazul.png">
+
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
+    <link rel="stylesheet" href="src/css/styleLogin.css">
+    <link rel="stylesheet" href="src/css/responsiveLog.css">
+    
+
+
+    <title>Ode Sempre</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+        <img class="logo" src="src/midia/odeSempre.png" alt="logo Ode Sempre">
+        </a>
+    </header>
+
+    <nav>
+
+      <div class="dropdown">
+        <img class="icon" src="src/midia/navigation.png">
+        <div class="dropdown-content">
+            <a onclick="openLogin()" >Log-in</a>
+            <a href="feedback.html">Feedback</a>
+            </div>
+        </div>
+
+        <div class="p1 navlink">
+            <a href="cardapio.html">CARDÁPIO</a>
+        </div>
+
+        <div class="p1 navlink">
+            <a href="sobre.html">QUEM SOMOS?</a>
+        </div>
+
+        <div class="p1 navlink">
+            <a href="index.html">HOME</a>
+        </div>
+
+    </nav>
+
+    <main>
+        <div class="titulo">
+        <h3 class="titulo1">Ode hoje, Ode amanhã...</h3>
+        <h1 class="titulo2">Ode Sempre!</h1>
+        </div>
+
+
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <img src="src/midia/dog.jpg">
+              <div class="text">Procurando por um ambiente perfeito?</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="src/midia/amigos.jpg" >
+              <div class="text">Para encontrar os amigos de sempre</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="src/midia/balconistas.jpg" >
+              <div class="text">Com o melhor atendimento para você</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="src/midia/lojaazul.webp">
+              <div class="text">Aqui você encontra!</div>
+            </div>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+            </div>
+
+            <div class="titulo">
+              <h2 class="titulo3"><a href="sobre.html">Quem Somos?</a></h2>
+              <div  class="divisão"></div>
+              <div class="textos">
+                A "Ode Sempre", criada por amigos em 2015, é mais do que uma cafeteria. Durante a pandemia, destacou-se ao manter conexões virtuais e tornar-se um refúgio de esperança. Além do café de qualidade, o sucesso da "Ode Sempre" reside na amizade e no compromisso com a comunidade. 
+            </div>
+            </div>
+              </div>
+
+            <video loop autoplay muted id="vid">
+              <source src="src/midia/odeVideo.mp4" alt="tela de carregamento" type="video/mp4">
+          </video>
+
+          <div class="titulo">
+              <h2 class="titulo3"><a href="cardapio.html">Cardápio</a></h2>
+              <div  class="divisão"></div>
+              <div class="textos">
+                Explore a diversidade de sabores na "Ode Sempre"! De croissants a cafés especiais, cada produto é uma experiência única. Em um ambiente acolhedor, cada escolha é um convite para criar momentos inesquecíveis. Na "Ode Sempre", cada sabor conta uma história.
+            </div>
+            </div>
+              </div>
+
+              <div class="cardapio">
+                <img src="src/midia/cafes.jpg">
+           
+              <img src="src/midia/bagunca.jpg">
+      
+            <img src="src/midia/paes.jpg">
+        </div>
+
+        <div class="titulo">
+          <h2 class="titulo3"><a>Venha nos Visitar!</a></h2>
+          <div  class="divisão"></div>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d914.2031216035148!2d-46.63626983050093!3d-23.575177169503053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce599c8c983a35%3A0xefc79765898f5020!2sR.%20do%20Para%C3%ADso%2C%20812%20-%20Para%C3%ADso%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2002327-100!5e0!3m2!1spt-BR!2sbr!4v1702897930790!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </main>
+
+    <div id="id01" class="modal">
+    
+      <form class="modal-content animate" action="./index.html" method="post">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="./src/midia/icone_perfil.png" alt="Avatar" class="avatar">
+          <b class="container" style="display:inherit">
+            Login
+        </b>
+        </div>
+  
+        <div class="container">
+          <label for="uname"><b>Usuário/E-mail</b></label>
+          <input type="email" placeholder="Informe seu usuário..." name="email" required>
+  
+          <label for="psw"><b>Senha</b></label>
+          <input type="password" placeholder="Informe sua senha..." name="psw" required>
+            
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember">Lembrar-me
+          </label>
+        </div>
+  
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+            <div class="funcoes">
+                
+                <span class="uname">Novo Usuário? <a href="#" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Cadastre-se</a></span>
+            </div>
+        </div>
+      </form>
+    </div>
+  
+    
+    <div id="id02" class="modal">
+      
+      <form class="modal-content animate" action="./index.html" method="post">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="./src/midia/icone_perfil.png" alt="Avatar" class="avatar">
+          <b class="container" style="display:inherit">
+            Cadastro de Usuário
+        </b>
+        </div>
+  
+        <div class="container">
+          <label for="uname"><b>Nome</b></label>
+          <input type="text" placeholder="Informe seu nome..." name="uname" required>
+  
+          <label for="uname"><b>Usuário/Email</b></label>
+          <input type="email" placeholder="Informe seu e-mail..." name="email" required>
+  
+          <label for="tel"><b>Telefone</b></label>
+          <input type="tel" pattern="[0-9]{8,9}" title="Informe um telefone válido..." placeholder="Informe seu telefone..." name="telefone" required>
+          
+  
+          <label for="psw"><b>Senha</b></label>
+          <input type="password" placeholder="Crie uma senha de acesso" name="psw" required>
+            
+          <button onclick="cupom()" type="submit">Cadastrar</button>
+        </div>
+  
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancelar</button>
+        </div>
+      </form>
+    </div>
+
+    <footer>
+        <a href="index.html">
+      <img class="footerLogo" src="src/midia/cafebranco.png">
+        </a>
+
+       <div class="social">
+        <a href="#">
+       <img class="footerSocial" src="src/midia/instagram.png">
+        </a>
+        <a href="#">
+       <img class="footerSocial" src="src/midia/tik-tok.png">
+        </a>
+       <a href="#">
+       <img class="footerSocial" src="src/midia/whatsapp.png">
+       </a>
+       <a href="#">
+        <img class="footerSocial" src="src/midia/ifood.png">
+        </a>
+       </div>
+
+        <p class="footerText">SENAI - Roberto Simonsen | 1MDS2</p>
+        <p class="footerText">© 2023 | Ana Luiza & Rayanne.</p>
+        
+    </footer>
+
+    <script src="src/js/script.js"></script>
+    <script src="src/js/jsLogin.js"></script>
+    
+</body>
+</html>

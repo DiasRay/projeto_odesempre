@@ -1,0 +1,33 @@
+@media(max-width: 769px){
+  #id01 .modal-content {
+    width: 90%;
+  }
+  #id02 .modal-content {
+    width: 90%;
+  }
+
+  .cancelbtn {
+    width: 100%;
+  }
+    
+  .container{
+    display:-ms-flexbox;
+    padding: 20px 20px 60px;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .funcoes{
+    display: flexbox;
+    text-align: center;
+    justify-content: center;
+    float: center;
+    width: 80vw;
+    }
+
+    label{
+      width: 80vw;
+      text-align: center;
+    }
+}

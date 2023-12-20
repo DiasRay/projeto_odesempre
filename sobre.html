@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="src/midia/cafeazul.png">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/styleSobre.css">
+    <link rel="stylesheet" href="src/css/styleLogin.css">
+    <link rel="stylesheet" href="src/css/responsiveLog.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
+    <!-- <link rel="stylesheet" href="./src/css/style.css"> -->
+
+    <title>Sobre | Ode Sempre</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+        <img class="logo" src="src/midia/odeSempre.png" alt="logo Ode Sempre">
+        </a>
+    </header>
+
+    <nav>
+
+      <div class="dropdown">
+        <img class="icon" src="src/midia/navigation.png">
+        <div class="dropdown-content">
+            <a onclick="openLogin()" >Log-in</a>
+            <a href="feedback.html">Feedback</a>
+            </div>
+        </div>
+
+        <div class="p1 navlink">
+            <a href="cardapio.html">CARDÁPIO</a>
+        </div>
+
+        <div class="p1 navlink">
+            <a href="sobre.html">QUEM SOMOS?</a>
+        </div>
+
+        <div class="p1 navlink">
+            <a href="index.html">HOME</a>
+        </div>
+
+    </nav>
+
+    <!-- <div class="parallax1">
+        <h2>Sobre Nós</h2>
+    </div> -->
+
+    <main>
+        <div class="quadro1">
+            <div class="descricao">
+                <p>
+                <h2><b>O que é a Ode Sempre?!</b></h2>
+                <div class="textos">
+                    O objetivo da cafeteria "Ode Sempre" não é apenas fornecer café de qualidade, mas criar um espaço acolhedor e comunitário.
+                </div>
+                <div class="textos">
+                    Durante a pandemia, o objetivo evoluiu para manter essa comunidade unida, oferecendo não apenas café, mas também suporte emocional e momentos de alegria virtual.
+                </div>
+            </div>
+
+            <div class="img1">
+                <img src="./src/midia/oqsomos.jpg" alt="Imagem da cafeteria Ode Sempre!">
+            </div>
+        </div>
+
+        <div class="quadro2">
+
+            <div class="img2">
+                <img src="./src/midia/cafeteria azul.jpg" alt="Imagem da cafeteria Ode Sempre!">
+            </div>
+
+            <div class="descricao">
+                <p>
+                    <h2><b>Você faz parte da nossa história</b></h2>
+                    <div class="textos">        
+                        A "Ode Sempre" surgiu em 2015, após um grupo de amigos se juntarem para abrir uma pequena cafeteria no bairro onde moravam.
+                    </div>
+                    <div class="textos">
+                        A cafeteria tornou-se popular ao decorrer dos anos. Durante a pandemia, adaptaram-se, oferecendo entrega e eventos online conectando clientes e celebrando a resiliência. O sucesso não foi apenas comercial, mas um testemunho da força da amizade e da busca por alegria em tempos desafiadores. 
+                    </div>
+                    <div class="textos">
+                        A "Ode Sempre" não é apenas uma cafeteria; é um farol de esperança e comunidade.
+                    </div>
+            </div>
+        </div>
+
+        <div class="quadro3">
+
+            <div class="conteudo">
+                <h3>Missão</h3>
+            <div class="textos1">
+                <p>
+                    Encantar e conectar pessoas através de experiências sensoriais únicas, proporcionando momentos de descontração e inspiração em nosso ambiente acolhedor.
+                </p>
+                </div>
+            </div>
+
+            <div class="conteudo">
+                <h3>Visão</h3>
+            <div class="textos">
+                <p>
+                    Ser reconhecida como um ponto de encontro vibrante e criativo, onde cada cliente se sinta parte da comunidade acolhedora e inspiradora, que é a Ode Sempre!
+                </p>
+            </div>
+            </div>
+
+            <div class="conteudo">
+                <h3>Valores</h3>
+                <div class="textos">
+                <ul>
+                    <li>
+                        <b>Inovação:</b>
+                        Buscar constantemente novas formas de surpreender e encantar nossos clientes.
+                    </li>
+                    <li>
+                        <b>Comunidade:</b>
+                        Fomentar um ambiente acolhedor que promova conexões significativas.
+                    </li>
+                    <li>
+                        <b>Qualidade:</b>
+                        Oferecer produtos e serviços de alta qualidade para garantir a satisfação dos clientes.
+                    </li>
+                    <li>
+                        <b>Criação:</b>
+                        Estimular a criatividade e a expressão individual, incentivando a diversidade de ideias.
+                    </li>
+                    <li>
+                        <b>Responsabilidade:</b>
+                        Agir com integridade e ética em todas as nossas operações, valorizando a sustentabilidade e responsabilidade social.
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <div id="id01" class="modal">
+    
+        <form class="modal-content animate" action="./index.html" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="./src/midia/icone_perfil.png" alt="Avatar" class="avatar">
+            <b class="container" style="display:inherit">
+              Login
+          </b>
+          </div>
+    
+          <div class="container">
+            <label for="uname"><b>Usuário/E-mail</b></label>
+            <input type="email" placeholder="Informe seu usuário..." name="email" required>
+    
+            <label for="psw"><b>Senha</b></label>
+            <input type="password" placeholder="Informe sua senha..." name="psw" required>
+              
+            <button type="submit">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember">Lembrar-me
+            </label>
+          </div>
+    
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+              <div class="funcoes">
+                  
+                  <span class="uname">Novo Usuário? <a href="#" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Cadastre-se</a></span>
+              </div>
+          </div>
+        </form>
+      </div>
+    
+      
+      <div id="id02" class="modal">
+        
+        <form class="modal-content animate" action="./index.html" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="./src/midia/icone_perfil.png" alt="Avatar" class="avatar">
+            <b class="container" style="display:inherit">
+              Cadastro de Usuário
+          </b>
+          </div>
+    
+          <div class="container">
+            <label for="uname"><b>Nome</b></label>
+            <input type="text" placeholder="Informe seu nome..." name="uname" required>
+    
+            <label for="uname"><b>Usuário/Email</b></label>
+            <input type="email" placeholder="Informe seu e-mail..." name="email" required>
+    
+            <label for="tel"><b>Telefone</b></label>
+            <input type="tel" pattern="[0-9]{8,9}" title="Informe um telefone válido..." placeholder="Informe seu telefone..." name="telefone" required>
+            
+    
+            <label for="psw"><b>Senha</b></label>
+            <input type="password" placeholder="Crie uma senha de acesso" name="psw" required>
+              
+            <button onclick="cupom()" type="submit">Cadastrar</button>
+          </div>
+    
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancelar</button>
+          </div>
+        </form>
+      </div>
+  
+
+    <footer>
+        <a href="index.html">
+      <img class="footerLogo" src="src/midia/cafebranco.png">
+        </a>
+
+       <div class="social">
+        <a href="#">
+       <img class="footerSocial" src="src/midia/instagram.png">
+        </a>
+        <a href="#">
+       <img class="footerSocial" src="src/midia/tik-tok.png">
+        </a>
+       <a href="#">
+       <img class="footerSocial" src="src/midia/whatsapp.png">
+       </a>
+       <a href="#">
+        <img class="footerSocial" src="src/midia/ifood.png">
+        </a>
+       </div>
+
+        <p class="footerText">SENAI - Roberto Simonsen | 1MDS2</p>
+        <p class="footerText">© 2023 | Ana Luiza & Rayanne.</p>
+        
+       
+    </footer>
+
+    <script src="src/js/jsLogin.js"></script>
+
+</body>
+</html>

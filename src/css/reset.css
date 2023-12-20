@@ -1,0 +1,19 @@
+* {
+    margin: auto;
+    left: auto;
+    right: auto;
+    padding: 0;
+    box-sizing: border-box;
+    top: auto;
+    bottom: auto;
+    box-sizing: border-box;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}

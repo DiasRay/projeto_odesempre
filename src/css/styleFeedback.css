@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+section{
+    /* margin: 20px 150px; */
+    width: 30vw;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+    display: inline-block;
+    grid-gap: 10% 0;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+section h1{
+    color: #0388a6;
+    text-align: center;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+section h3{
+    color: #63AEBF;
+    text-align: center;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 16px;
+}
+
+section label{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+input, textarea{
+    /* width: 100%; */
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #63aebf;
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.containerfeed{
+    grid-gap:  0 10%;
+    display: grid;
+    grid-template-columns: 200px 200px;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.obs{
+    margin-top: inherit + 50px;
+}
+
+.apagada {
+    background-image: url('../img/star0.png');
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+    
+.destaque {
+    background-image: url('../img/star1.png');
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+button {
+    background-color: #0388a6;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    border-radius: 8px;
+}
+
+/* Resposividade */
+
+@media (max-width: 800px) {
+    input, textarea{
+        width: 100%;
+    }
+
+    .container{
+        display: block;
+    }
+}

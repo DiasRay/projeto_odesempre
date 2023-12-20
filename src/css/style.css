@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+body {
+    color: black;
+}
+
+header {
+    text-align: center;
+    border-bottom: 1px solid #0388A6;
+}
+
+header .logo {
+    width: 120px;
+    position: relative;
+    top: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav .icon {
+    width: 70px;
+    position: relative;
+    margin-top: -8px;
+    display: inline;
+}
+
+.dropdown {
+    float: right;
+    overflow: hidden;
+    cursor: pointer;
+    margin-top: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #0388A6;
+    min-width: 120px;
+    z-index: 1;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 13px;
+    opacity: .9;
+}
+
+
+.dropdown-content a {
+    color: white;
+    padding: 10px 14px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color:  #63AEBF;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block
+}
+
+nav {
+    top: 0;
+    list-style-type: none;
+    overflow: hidden;
+    color: #0388A6;
+    font-size: 16px;
+}
+
+.navlink {
+    float: right;
+}
+
+.navlink a {
+    color: #0388A6;
+    display: block;
+    margin-top: 10px;
+    margin: 20px;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 14px;
+}
+
+.navlink a:hover {
+    border-bottom: 1px solid #0388A6;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #080B0D;
+    padding: 90px;
+    margin-top: 20px;
+}
+
+.footerText {
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -40px;
+    font-size: 14px;
+    opacity: .5;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footerSocial{
+    position: relative;
+    width: 20px;
+    margin: auto;
+    top: -30px;
+}
+
+.social{
+    float: right;
+    display: flex;
+    flex-direction: column;
+}
+
+.footerLogo{
+    position: relative;
+    width: 60px;
+    top: -20px;
+    display: inline;
+}
+
+.titulo {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.titulo1 {
+    color: #63AEBF;
+    text-align: center;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.titulo2 {
+    color: #0388A6;
+    text-align: center;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 50px;
+}
+
+.titulo3 a{
+    display: block;
+    color: #0388A6;
+    text-align: center;
+    font-family:'Comfortaa', sans-serif;
+}
+
+.divisão{
+    border-bottom: 1px solid #63AEBF;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.textos {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    max-width: 50vw;
+}
+
+
+.slideshow-container {
+    max-width: 1300px;
+    position: relative;
+    margin: auto;
+}
+
+.slideshow-container .mySlides img{
+    width: 100%;
+    height: 60vh;
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    text-shadow: 0px 2px 8px #080B0D;
+    font-size: 35px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 900;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #63AEBF;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    margin-bottom: 80px;
+    opacity: .6;
+}
+
+.active {
+    background-color: #0388A6;
+}
+
+video{
+    width: 100%;
+    height: 60vh;
+    margin-bottom: 30px;
+}
+
+.cardapio {
+    margin: 30px;
+    /* float: left; */
+    display: flex;
+    flex-wrap:wrap;
+    text-align: center;
+    
+  }
+  
+.cardapio img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 30px;
+    transition: width 1s, height 1s;
+  }
+
+  .cardapio img:hover {
+    width: 320px;
+    height: 320px;
+}
+
+iframe{
+    width: 800px;
+    display: flex;
+    -ms-flex-item-align: center;
+}
+
