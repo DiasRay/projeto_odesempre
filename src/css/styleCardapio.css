@@ -165,18 +165,6 @@ footer {
     margin-left: 50px;
 }
 
-.produto {
-    font-size: 16px;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
-    margin-left: 10px;
-    display: flex;
-    max-width: 23vw;
-    margin-left: 185px;
-    margin-top: 30px;
-    justify-content: right;
-}
-
 
 .quadro4{
     display: flex;
@@ -188,6 +176,7 @@ footer {
 }
 
 .quadro4 .img4 img{
+    margin: 0;
     width: 100px;
     display: flex;
     position: relative;
@@ -206,8 +195,7 @@ footer {
     font-weight: bold;
     opacity: .5;
     text-align: left;
-    min-height: 8vh;
-    max-width: 40vw;
+    max-width: 30vw;
 }
 
 .precos {
